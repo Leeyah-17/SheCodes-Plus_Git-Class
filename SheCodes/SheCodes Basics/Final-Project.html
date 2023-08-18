@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Thing</title>
+    <style>
+        body{
+           background: linear-gradient(rgb(247, 199, 199), rgb(230, 197, 203)); 
+        }
+        
+        img{
+            max-width: 100%;
+            margin: 0 auto;
+            height: 400px;
+            display: block;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        h1, h2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 900px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 300;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 25px;
+            margin-right: 30px;
+        }
+        a:hover{
+            color: rgb(65, 65, 233);
+            text-decoration: none;
+        }
+        button{
+            padding: 20px 30px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid rgba(180, 61, 25, 0.575);
+            border-radius: 20px;
+            transition: all 150ms ease;
+            box-shadow: 3px 3px 10px rgba(206, 4, 37, 0.959);
+            background: rgba(243, 157, 131, 0.575);
+            color: rgb(156, 22, 44);
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button:hover{
+            background: rgba(180, 61, 25, 0.575);
+            color: rgba(206, 4, 37, 0.959);
+        }
+        p{
+            font-size: 20px;
+        }
+        .link{
+            padding-top: 20px;
+        }
+        .about{
+            text-align: center;
+        }
+        .screaming{
+            padding-bottom: 15px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>
+        🎂 CAKE 🧁
+    </h1>
+    <h2>
+        Eat Sweet, Live Happy
+    </h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/105/original/cake_image.jpg?1685004462" alt="beautiful cake">
+    <p class="about">
+        Cake is one of my favourite thing to have when feeling down. 
+        Its rich and sugary taste lightens up my mood.
+    </p>
+    <hr />
+    <p>
+        Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries🍩, meringues🍨, custards🍮, and pies🍲.
+    </p>
+    <p class="link">
+        Cakes are broadly divided into several categories, based primarily on ingredients and mixing techniques.
+Although clear examples of the difference between cake and bread are easy to find, the precise classification has always been elusive.
+    <br />
+    <a href="https://en.wikipedia.org/wiki/Cake" target="_blank">Learn more about cake</a>
+    </p>
+    <p class="screaming">
+        Cakes are quite simple to make and ohh.. soo yummy!
+        <br />
+        Click on the "screaming" cake button to order or learn how to make one.
+    </p>
+    <button>
+        CAKE!!!
+    </button>
+    <p class="footer">
+        Coded by Ololade
+    </p>
+    </div>
+
+    <script>
+        function cake() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let request = prompt("Order or learn?");
+            if (request === "learn") {
+                alert("Hi " + name + "😊. Your cake recipe would be sent to your email soon.");
+            }
+            else {
+                alert("Hello, " + name + ". The cake list to order from would be sent to your email.");
+            }
+        }
+        let cakeButton = document.querySelector("button");
+        cakeButton.addEventListener("click", cake);
+    </script>
+</body>
+</html>
